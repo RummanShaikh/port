@@ -35,7 +35,7 @@ function Projects() {
               title="Extension Helper"
               description="This website helps in finding the useful extension to coders and more likely to opensource type of website where the developer can share their developed extensions and free study materials from across the web is available and also helps in making a coder community"
               techStack="SpringBoot, React"
-              ghLink="https://github.com/RummanShaikh"
+              ghLink="https://github.com/RummanShaikh/extensionHelper"
             />
           </Col>
 
