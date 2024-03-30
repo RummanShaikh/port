@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import chatify from "../../Assets/Projects/chatify.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import codeEditor from "../../Assets/Projects/codeEditor.png";
+import blog from "../../Assets/Projects/blog.png";
 
 function Projects() {
   return (
@@ -17,6 +19,29 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={codeEditor}
+              isBlog={false}
+              title="Cloud TCO"
+              description="Evaluates the overall expenses associated with adopting and operating cloud-based service. Github"
+              techStack="Django, Vite-React, Machine Learning, AWS"
+              ghLink="https://github.com/RummanShaikh/Cloud-TCO.git"
+              demoLink="http://useast1frontend.s3-website-us-east-1.amazonaws.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={blog}
+              isBlog={false}
+              title="Doctor Prescription System"
+              description="This system offers users the convenience of obtaining prescriptions from doctors, while also integrating an AI chatbot for less severe cases. The chatbot provides users with advice and remedies, allowing them to manage their health proactively. Additionally, the system facilitates appointment scheduling by suggesting available time slots to meet with a doctor."
+              techStack="SpringBoot, HTML, CSS, Javascript, Eureka Server, Microservices, Api Gateway,  ChatGpt API"
+              ghLink="https://github.com/RummanShaikh/Super-30.git"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
@@ -38,8 +63,6 @@ function Projects() {
               ghLink="https://github.com/RummanShaikh/extensionHelper"
             />
           </Col>
-
-          
         </Row>
       </Container>
     </Container>
